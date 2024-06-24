@@ -49,7 +49,6 @@ using namespace std;
 
 // Sort the the given array and return the element 
 int using_sort(vector<int> arr){
-  
   Sort(arr.begin(),arr.end());
   return arr[arr.size()-1];
 }
