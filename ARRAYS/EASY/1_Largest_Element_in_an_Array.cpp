@@ -1,3 +1,30 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
+// Sort the the given array and return the element 
+int using_sort(vector<int> arr){
+
+  // sort(arr.begin(),arr.end());
+  // return arr[arr.size()-1];
+
+
+  int max=arr[0];
+  for(auto i:arr){
+    if(i>max){
+      max=i;
+    }
+  }
+  return max;
+}
+
+
+int main(){
+  vector<int> arr={0,1,2,-1,34,-2,34};
+  cout<<using_sort(arr)<<endl;
+}
+
+
 /*
 Largest Element in Array
 
@@ -41,22 +68,3 @@ Constraints:
 Array may contain duplicate elements. 
 
 */
-
-
-#include<iostream>
-#include<algorithm>
-using namespace std;
-
-// Sort the the given array and return the element 
-int using_sort(vector<int> arr){
-  Sort(arr.begin(),arr.end());
-  return arr[arr.size()-1];
-}
-
-
-int main(){
-  vector<int> arr={0,1,2,-1,34,-2,34};
-
-  cout<<using_sort(arr)<<endl;
-
-}
