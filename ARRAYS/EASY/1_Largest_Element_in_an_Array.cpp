@@ -2,13 +2,13 @@
 #include<algorithm>
 using namespace std;
 
-// Sort the the given array and return the element 
 int using_sort(vector<int> arr){
 
-  // sort(arr.begin(),arr.end());
-  // return arr[arr.size()-1];
+  //sorting 
+  sort(arr.begin(),arr.end());
+  return arr[arr.size()-1];
 
-
+  // interating the array and find the element
   int max=arr[0];
   for(auto i:arr){
     if(i>max){
@@ -17,7 +17,6 @@ int using_sort(vector<int> arr){
   }
   return max;
 }
-
 
 int main(){
   vector<int> arr={0,1,2,-1,34,-2,34};
